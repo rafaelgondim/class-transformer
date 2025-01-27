@@ -10,10 +10,6 @@
   "module": "./build/esm5/index.js",
   "es2015": "./build/esm2015/index.js",
   "typings": "./build/types/index.d.ts",
-  "files": [
-    "build",
-    "README.md"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/typestack/class-transformer.git"
@@ -41,7 +37,7 @@
     "test": "jest --coverage --verbose",
     "test:watch": "jest --watch",
     "test:ci": "jest --runInBand --no-cache --coverage --verbose",
-    "prepare": "npm run build & npm run build:types & npm run build:es2015 & npm run build:esm5"
+    "prepare": "npm run build:es2015 & npm run build:esm5 & npm run build:cjs & npm run build:umd & npm run build:types"
   },
   "husky": {
     "hooks": {
