@@ -10,6 +10,10 @@
   "module": "./esm5/index.js",
   "es2015": "./esm2015/index.js",
   "typings": "./types/index.d.ts",
+  "files": [
+    "build",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/typestack/class-transformer.git"
@@ -36,7 +40,8 @@
     "lint:check": "eslint --max-warnings 0 --ext .ts src/",
     "test": "jest --coverage --verbose",
     "test:watch": "jest --watch",
-    "test:ci": "jest --runInBand --no-cache --coverage --verbose"
+    "test:ci": "jest --runInBand --no-cache --coverage --verbose",
+    "prepare": "npm run build"
   },
   "husky": {
     "hooks": {
